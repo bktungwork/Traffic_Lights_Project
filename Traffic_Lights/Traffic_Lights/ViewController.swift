@@ -27,9 +27,25 @@ class ViewController: UIViewController {
     UIredButton.layer.cornerRadius = 10
     UIyellowButton.layer.cornerRadius = 10
     UIgreenButton.layer.cornerRadius = 10
-    redLight.layer.cornerRadius = 48
-    yellowLight.layer.cornerRadius = 48
-    greenLight.layer.cornerRadius = 48
+//    redLight.layer.cornerRadius = 48
+//    yellowLight.layer.cornerRadius = 48
+//    greenLight.layer.cornerRadius = 48
+        
+        redLight.layer.cornerRadius = redLight.frame.width / 2
+        yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
+        greenLight.layer.cornerRadius = greenLight.frame.width / 2
+        
+        redLight.layer.borderWidth = 2
+        yellowLight.layer.borderWidth = 2
+        greenLight.layer.borderWidth = 2
+        
+        redLight.layer.borderColor = UIColor.red.cgColor
+        yellowLight.layer.borderColor = UIColor.yellow.cgColor
+        greenLight.layer.borderColor = UIColor.green.cgColor
+        
+        redLight.alpha = 0.5
+        yellowLight.alpha = 0.5
+        greenLight.alpha = 0.5
     }
 
     @IBAction func redButton(_ sender: Any) {
